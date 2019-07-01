@@ -1,0 +1,61 @@
+\documentclass[12pt, letterpaper]{book}
+
+\usepackage{graphicx}         %gráficas eps
+\usepackage{subfigure}        %subfiguras con títulos a) b) ...
+\usepackage[utf8]{inputenc}   %letras acentuadas
+\usepackage[spanish]{babel}   %nombre de capítulos, secciones, etc en español
+\usepackage{amsmath}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{rotating}
+\usepackage{amssymb}
+\usepackage{afterpage}
+\usepackage[spanish]{nomencl}
+\usepackage{textcomp}
+\usepackage{setspace}
+\usepackage{longtable}
+\usepackage{pdfpages}
+
+\usepackage[top=3cm,bottom=3cm,left=4cm,right=3cm]{geometry}
+
+% Title Page
+\title{Tema de tesis}
+\author{Estudiante}
+
+
+\begin{document}
+	%Modificaciones para los nombres de algunos títulos
+	\renewcommand{\listtablename}{{Índice de tablas}}
+	\renewcommand{\tablename}{Tabla}
+%	\renewcommand{\algorithmcfname}{Algoritmo}
+	
+\includepdf[pages={1}]{portada.pdf}
+
+\newpage\null\thispagestyle{empty}\newpage
+	
+%\maketitle
+\chapter*{Resumen}
+
+
+\chapter*{Abstract}
+
+
+\newpage\null\thispagestyle{empty}\newpage
+
+\addtocontents{toc}{\hfill \textbf{Página} \par}
+\tableofcontents
+
+\chapter{Introducción}
+\section{Motivación}
+\section{Problema}
+\section{Método propuesto}
+\section{Organización de la tesis}
+
+\chapter{Trabajo relacionado}
+
+\chapter{Desarrollo}
+
+\chapter{Experimentos}
+
+\chapter{Conclusiones y trabajo futuro}
+
+\end{document}          
