@@ -1,2 +1,5 @@
-# ProtocoloPlantillaLatex
-Plantilla para protocolo de tesis
+# Plantillas para Tesis de CIDETEC IPN
+
+Se incluyen las plantillas para el protocolo y para la tesis
+
+
