@@ -1,47 +1,55 @@
-\documentclass[]{report}
+\documentclass[]{article}
 
 \usepackage{pdfpages} 
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
+\usepackage[nottoc, numbib]{tocbibind} %bibindex
 
 % Title Page
-\title{Tema de tesis}
+\title{Título de la propuesta}
 \author{Estudiante}
-
 
 \begin{document}
 	
 \includepdf[pages={1}]{portada.pdf}
 	
-
-\newpage\null\thispagestyle{empty}\newpage
+%\newpage\null\thispagestyle{empty}\newpage
 	
 %\maketitle
 
 \begin{abstract}
-	Aqui va el resumen 
+	Aqui va el resumen. Describir de forma conscisa el problema y que técnicas se pretenden usar para abordarlo. 
 \end{abstract}
 
-\newpage\null\thispagestyle{empty}\newpage
+%\newpage\null\thispagestyle{empty}\newpage
 
-\addtocontents{toc}{\hfill \textbf{Página} \par}
-\tableofcontents
+%\addtocontents{toc}{\hfill \textbf{Página} \par}
+%\tableofcontents
 
-\chapter{Introducción}
-\section{Motivación}
-\section{Problema}
+\section{Introducción}
+\subsection{Motivación}
+\subsection{Problema}
 
-\chapter{Trabajo Relacionado}
+\section{Trabajo Relacionado}
 
-\chapter{Propuesta}
+\section{Propuesta}
 
-\section{Hipótesis}
-\section{Objetivo General}
-\section{Metodología}
+\subsection{Hipótesis}
+
+Revisar el libro de \cite{hernandez2018metodologia}.
+
+\subsection{Objetivo General}
+\subsection{Metodología}
+
 \subsection{Cronograma}
 
-\chapter{Avances}
+\section{Avances}
 
-\chapter{Conclusiones}
+Si es que hay avances aqui debes colocarlos.
+
+\section{Conclusiones}
+
+\bibliographystyle{plain}
+\bibliography{referencias}
 
 \end{document}          
